@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "allowJs": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+    "paths": {
+      "constant": ["src/constant/index.tsx"],
+      "constant/*": ["src/constant/*"],
+      "types": ["src/types/index.tsx"],
+      "types/*": ["src/types/*"],
+      "*": ["src/*"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "sourceMap": true,
+    "noImplicitAny": false
+  },
+  "exclude": ["node_modules", "build"]
+}
